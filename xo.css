@@ -1,0 +1,39 @@
+h1{
+    text-align: center;
+}
+td{
+    border: 2px black solid;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+}
+#PlayerX,#PlayerO{
+    margin-right: 20px;
+    font-weight: bolder;
+    font: bold 2rem sans-serif;
+}
+label{
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
+.player1Label{
+    margin-right: 5px;
+    border: 2px rgba(255, 0, 0, 0.5) solid;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: large;
+    font: 2rem sans-serif;
+}
+.player2Label{
+    margin-left: 5px;
+    border: 2px rgba(0, 0, 255,0.5) solid;
+    text-align: center;
+    border-radius: 5px;
+    align-content: center;
+    padding: 5px;
+    font: 2rem sans-serif;
+}
+table{
+    display: flex; justify-content: center; padding-bottom: 5px;
+}
