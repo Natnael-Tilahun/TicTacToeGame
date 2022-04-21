@@ -41,12 +41,12 @@ function Player(playerName, stepsArray, won) {
   this.checkWinner = function (res) {
     let testCase;
     function checkRowWinner(age) {
-      testCase = res[0];
+      testCase = res[res.length - 1];
       return age.charAt(0) == parseInt(testCase.charAt(0));
     }
 
     function checkColumnWinner(age) {
-      testCase = res[0];
+      testCase = res[res.length - 1];
       return age.charAt(1) == parseInt(testCase.charAt(1));
     }
 
