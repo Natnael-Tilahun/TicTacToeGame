@@ -1,70 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-         h1{
-            text-align: center;
-        }
-        td{
-            border: 2px black solid;
-            text-align: center;
-            width: 100px;
-            height: 100px;
-        }
-        #PlayerX,#PlayerO{
-            margin-right: 20px;
-            font-weight: bolder;
-            font: bold 2rem sans-serif;
-        }
-        label{
-            font-weight: bolder;
-            margin-bottom: 5px;
-        }
-        .player1Label{
-            margin-right: 5px;
-            border: 2px rgba(255, 0, 0, 0.5) solid;
-            text-align: center;
-            border-radius: 5px;
-            padding: 5px;
-            font-size: large;
-            font: 2rem sans-serif;
-        }
-        .player2Label{
-            margin-left: 5px;
-            border: 2px rgba(0, 0, 255,0.5) solid;
-            text-align: center;
-            border-radius: 5px;
-            align-content: center;
-            padding: 5px;
-            font: 2rem sans-serif;
-        }
-        table{
-            display: flex; justify-content: center; padding-bottom: 5px;
-        }
-    </style>
-</head>
-<body id="body">
-    <h1>XO Game</h1>
-    <div style="display: flex; justify-content: center; padding-bottom: 5px;">
-        <label for="" class="player1Label">Player X : <span id="PlayerX"></span> </label>
-        <label for="" class="player2Label">Player O : <span id="PlayerO"></span></label>
-        <!-- <select name="" id="playerSelect">
+    <link rel="stylesheet" href="xo.css" />
+  </head>
+  <body id="body">
+    <header>
+      <h1 id="gameTitle">XO Game</h1>
+    </header>
+    <div style="display: flex; justify-content: center; padding-bottom: 5px">
+      <label for="" class="player1Label"
+        >Player X : <span id="PlayerX"></span>
+      </label>
+      <label for="" class="player2Label"
+        >Player O : <span id="PlayerO"></span
+      ></label>
+    </div>
+    <div style="display: flex">
+      <div id="sideDiv">
+        <div class="container">
+          <label for="">Board Size: </label>
+          <select name="" id="playerSelect">
+            <!-- <label for="">Select board size</label> -->
+            <option value="" selected disabled>Select Board Size</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+        </div>
+        <div class="container">
+          <label for="">Opponent </label>
+          <select name="" id="playerSelect">
+            <!-- <label for="">Select board size</label> -->
+            <option value="" selected disabled>Select Your opponent</option>
+            <option value="Human">Human</option>
+            <option value="ComputerO">Computer</option>
+          </select>
+        </div>
+        <div class="container">
+          <label for="">Your Side </label>
+          <select name="" id="playerSelect">
+            <!-- <label for="">Select board size</label> -->
             <option value="" selected disabled>Select Your Side</option>
-            <option value="X">Player X</option>
-            <option value="O">Player O</option>
-        </select> -->
+            <option value="X">X</option>
+            <option value="O">O</option>
+          </select>
+        </div>
+        <button>Start</button>
+      </div>
+      <div id="tableDiv"></div>
     </div>
-    <div id="tableDiv">
-
-    </div>
-    <div style="display: flex; justify-content: center; padding: 1rem;">
-        <button style=" background-color: green;border: none;padding: 0.5rem;border-radius: 10px;color: white; font-weight: bold;" onclick="resetGame()">Reset Game</button>
+    <div style="display: flex; justify-content: center; padding-inline: 1rem">
+      <button id="resetBtn" onclick="resetGame()">Reset Game</button>
     </div>
 
     <script src="xo.js"></script>
-    </body>
+  </body>
 </html>

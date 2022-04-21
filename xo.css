@@ -1,39 +1,74 @@
-h1{
-    text-align: center;
+header {
+  border-bottom: 1px gainsboro solid;
 }
-td{
-    border: 2px black solid;
-    text-align: center;
-    width: 100px;
-    height: 100px;
+#gameTitle {
+  font-size: 2rem;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #553c9a, #b393d3);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
-#PlayerX,#PlayerO{
-    margin-right: 20px;
-    font-weight: bolder;
-    font: bold 2rem sans-serif;
+#PlayerX,
+#PlayerO {
+  margin-right: 20px;
+  font-weight: bolder;
+  font: bold 1.75rem sans-serif;
 }
-label{
-    font-weight: bolder;
-    margin-bottom: 5px;
+.player1Label,
+.player2Label {
+  margin-right: 0.75rem;
+  border-bottom: 4px rgba(111, 0, 255, 0.5) solid;
+  text-align: center;
+  border-radius: 5px;
+  padding-bottom: 2px;
+  font-size: large;
+  font: 1.5rem sans-serif;
+  margin-block: 0.5rem;
 }
-.player1Label{
-    margin-right: 5px;
-    border: 2px rgba(255, 0, 0, 0.5) solid;
-    text-align: center;
-    border-radius: 5px;
-    padding: 5px;
-    font-size: large;
-    font: 2rem sans-serif;
-}
-.player2Label{
+/* .player2Label {
     margin-left: 5px;
-    border: 2px rgba(0, 0, 255,0.5) solid;
+    border: 2px rgba(0, 0, 255, 0.5) solid;
     text-align: center;
     border-radius: 5px;
     align-content: center;
     padding: 5px;
     font: 2rem sans-serif;
+  } */
+#sideDiv {
+  background-color: #e8f3e8;
+  flex: 30%;
+  /* display: flex; */
+  justify-content: center;
+  padding: 2rem;
 }
-table{
-    display: flex; justify-content: center; padding-bottom: 5px;
+#tableDiv {
+  display: flex;
+  /* justify-content: center; */
+  padding-bottom: 1rem;
+  flex: 70%;
+}
+td {
+  border: 5px rgba(111, 0, 255, 0.7) solid;
+  text-align: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+#resetBtn {
+  background-color: rgba(111, 0, 255, 0.9);
+  border: none;
+  padding-block: 0.75rem;
+  padding-inline: 2rem;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.container {
+  padding: 5px;
 }
